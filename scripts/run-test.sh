@@ -1,6 +1,7 @@
-# enter virtualenv
-poetry shell
-pytest
+#!bin/bash
+
+# run pytest in virtualenv
+poetry run pytest
 
 # clean up
 pyclean () {
