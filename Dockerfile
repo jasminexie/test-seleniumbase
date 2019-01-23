@@ -6,4 +6,4 @@ WORKDIR /app
 COPY pyproject.toml /app/
 RUN . $HOME/.poetry/env && poetry update && poetry install
 
-RUN . $HOME/.poetry/env && poetry shell && seleniumbase install chromedriver
+RUN . $HOME/.poetry/env && poetry run seleniumbase install chromedriver
